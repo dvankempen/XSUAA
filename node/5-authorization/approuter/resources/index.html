@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>JavaScript Tutorial</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    function fetchCsrfToken(callback) {
+      jQuery.ajax({
+          url: '/myapp/users',
+          type: 'HEAD',
+          headers: { 'x-csrf-token': 'fetch' }
+        })
+        .done(function(message, text, jqXHR) {
+          callback(jqXHR.getResponseHeader('x-csrf-token'))
+        })
+        .fail(function(jqXHR, textStatus, errorThrown) {
+          alert('Error fetching CSRF token: ' + jqXHR.status + ' ' + errorThrown);
+        });
+    }
+
+    function addNewUser(token) {
+      var name = jQuery('#name').val() || '--';
+      jQuery.ajax({
+          url: '/myapp/users',
+          type: 'POST',
+          headers: { 'x-csrf-token': token },
+          contentType: 'application/json',
+          data: JSON.stringify({ name: name })
+        })
+        .done(function() {
+          alert( 'success' );
+          window.location = '/myapp/users'
+        })
+        .fail(function(jqXHR, textStatus, errorThrown) {
+          alert('Error adding new user: ' + jqXHR.status + ' ' + errorThrown);
+        });
+    }
+
+    function addUser() {
+      fetchCsrfToken(addNewUser);
+    }
+  </script>
+</head>
+<body>
+  <h1>JavaScript Tutorial</h1>
+  <a href="/myapp/users">Show users</a>
+  <br/>
+  <br/>
+  <input type="text" id="name" placeholder="Type user name"></input>
+  <input type="button" value="Add User" onClick="javascript: addUser()"></input>
+</body>
+</html>

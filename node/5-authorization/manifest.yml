@@ -1,0 +1,29 @@
+---
+applications:
+- name: myapp
+  path: myapp
+  buildpacks:
+  - nodejs_buildpack
+  routes:
+    - route: myapp-101520.cfapps.eu10.hana.ondemand.com
+  memory: 128M
+  services:
+    - myxsuaa
+
+- name: approuter
+  path: approuter
+  buildpacks:
+    - nodejs_buildpack
+  random-route: true
+  memory: 128M
+  env:
+    destinations: >
+      [
+        {
+          "name":"myapp",
+          "url":"https://myapp-101520.cfapps.eu10.hana.ondemand.com",
+          "forwardAuthToken": true
+        }
+      ]
+  services:
+    - myxsuaa

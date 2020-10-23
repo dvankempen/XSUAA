@@ -1,0 +1,21 @@
+{
+  "name": "myapp",
+  "description": "My App",
+  "version": "0.0.1",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<username>/<project>.git"
+  },
+  "dependencies": {
+    "@sap/hdbext": "latest",
+    "@sap/xsenv": "latest",
+    "express": "latest"
+  },
+  "engines": {
+    "node": "10.x.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

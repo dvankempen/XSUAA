@@ -1,0 +1,13 @@
+{
+  "name": "myapp-hana",
+  "dependencies": {
+    "@sap/hana-client": "^2.6.54",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "10.x.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

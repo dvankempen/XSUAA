@@ -1,0 +1,18 @@
+# Cloud Foundry application manifest file
+# contains deployment attributes
+# strict syntax! Spaces (indentation) have meaning
+# cf push -f <path>/manifest.yml
+---
+applications:
+- name: myapp # name is required
+  path: myapp # path to the source files, directory, zip, or jar (default .)
+# each app requires unique route
+  random-route: true # cf push --random-route
+# optionally specify buildpack
+  buildpacks:
+  - python_buildpack ## cf push -b <buildpack>
+# start command required when not provided by buildpack, Procfile, or otherwise
+#  command: python server.py ## cf push -c 'python server.py'
+# optinonally specify resource limits
+#  memory: 128M ## cf push -m 128M
+#  disk_quota: 512M ## cf push -k 512M

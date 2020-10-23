@@ -1,0 +1,19 @@
+{
+  "name": "myapp",
+  "version": "0.0.3",
+  "description": "Node.js sample app",
+  "keywords": [
+    "Node.js, Cloud Foundry, SAP Cloud Platform"
+  ],
+  "author": "Denys van Kempen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "10.x.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

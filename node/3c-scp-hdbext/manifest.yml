@@ -1,0 +1,18 @@
+# Cloud Foundry application manifest file
+# contains deployment attributes
+# strict syntax! Spaces (indentation) have meaning
+# cf push -f <path>/manifest.yml
+---
+applications:
+- name: myapp # name is required
+  path: myapp # path to the source files, directory, zip, or jar (default .)
+# each app requires unique route
+  random-route: true # cf push --random-route
+# optionally specify buildpack
+  buildpacks:
+  - nodejs_buildpack ## cf push -b <buildpack>
+# optinonally specify resource limits
+  memory: 128M ## cf push -m 128M
+# bind app to service instance
+  services:
+    - hdicontainer-1
