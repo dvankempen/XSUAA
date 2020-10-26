@@ -27,5 +27,21 @@
         "$XSAPPNAME.Update"
       ]
     }
+  ],
+  "role-collections": [
+      {
+          "name": "Viewer",
+          "description": "View Users",
+          "role-template-references": [
+              "$XSAPPNAME.Viewer"
+          ]
+      },
+      {
+          "name": "Manager",
+          "description": "Maintain Users",
+          "role-template-references": [
+              "$XSAPPNAME.Manager"
+          ]
+      }
   ]
 }
