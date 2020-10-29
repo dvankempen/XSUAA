@@ -4,7 +4,7 @@
   "private": true,
   "description": "Node.js sample app",
   "keywords": [
-    "Node.js, Cloud Foundry, SAP Cloud Platform"
+    "cloud foundry"
   ],
   "author": "Denys van Kempen",
   "license": "ISC",

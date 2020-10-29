@@ -7,8 +7,8 @@ applications:
 # each app requires unique route
   random-route: true # cf push --random-route
 # optionally specify buildpack
-#  buildpacks:
-#  - nodejs_buildpack ## cf push -b <buildpack>
+  buildpacks:
+  - nodejs_buildpack ## cf push -b <buildpack>
 # optinonally specify resource limits
-#  memory: 128M ## cf push -m 128M
-#  disk_quota: 512M ## cf push -k 512M
+  memory: 128M ## cf push -m 128M
+  disk_quota: 512M ## cf push -k 512M

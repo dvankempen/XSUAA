@@ -14,5 +14,5 @@ applications:
 # start command required when not provided by buildpack, Procfile, or otherwise
   command: python server.py ## cf push -c 'python server.py'
 # optinonally specify resource limits
-#  memory: 128M ## cf push -m 128M
-#  disk_quota: 512M ## cf push -k 512M
+  memory: 128M ## cf push -m 128M
+  disk_quota: 512M ## cf push -k 512M
