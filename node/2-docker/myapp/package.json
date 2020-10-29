@@ -1,6 +1,7 @@
 {
   "name": "myapp",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "private": true,
   "description": "My App",
   "keywords": [
     "Node.js sample app"
@@ -8,10 +9,9 @@
   "author": "Denys van Kempen",
   "license": "ISC",
   "dependencies": {
-    "express": "latest"
+    "express": "^4.17.1"
   },
   "scripts": {
     "start": "node server.js"
   }
 }
-

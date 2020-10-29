@@ -1,6 +1,7 @@
 {
   "name": "myapp",
   "version": "0.0.3",
+  "private": true,
   "description": "Node.js sample app",
   "keywords": [
     "Node.js, Cloud Foundry, SAP Cloud Platform"

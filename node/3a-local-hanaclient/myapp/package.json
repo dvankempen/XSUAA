@@ -1,5 +1,6 @@
 {
   "name": "myapp-hana",
+  "private": true,
   "dependencies": {
     "@sap/hana-client": "^2.6.54",
     "express": "^4.17.1"
