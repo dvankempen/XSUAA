@@ -1,0 +1,20 @@
+{
+  "name": "myapp",
+  "version": "0.0.3",
+  "private": true,
+  "description": "Node.js sample app",
+  "keywords": [
+    "cloud foundry"
+  ],
+  "author": "Denys van Kempen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "10.x.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

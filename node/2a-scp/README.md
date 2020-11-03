@@ -9,5 +9,4 @@ Business Logic App:
 - start command: node server.js
 
 Cloud Foundry deployment: 
-- application manifest: manifest.yml
-- command: cf push myapp --random-route
+- command: cf push myapp --random-route -c "node server.js"
