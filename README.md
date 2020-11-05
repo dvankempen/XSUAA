@@ -34,7 +34,7 @@ cf push myapp --random-route
 
 [![Business Logic App | cf push](https://img.youtube.com/vi/DGi3Kf9imyE/0.jpg)](https://youtu.be/DGi3Kf9imyE "Business Logic App | cf push")
 
-### Tutorial Video - Service Instace: SAP HANA Cloud and HDI Containers ### 
+### Tutorial Video - Service Instances: SAP HANA Cloud and HDI Containers ### 
 In this fourth video of the series, we cover how we can bind our Business Logic App to a Service Instance. There are many services available on the SAP Cloud Platform, Cloud Foundry environment. For our app, we will be using the SAP HANA Cloud service (trial) and the SAP HANA Schemas and HDI Container service.  
 
 To view the available services use the cf marketplace command and use the -s <service name> for additional information like the available plans. 
