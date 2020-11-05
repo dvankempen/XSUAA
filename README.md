@@ -21,18 +21,29 @@ In this second video of the series, we explore the "business logic app". This wi
 ### Tutorial Video - Business Logic App II ### 
 In this third video of the series, we explore our options for deploying our "business logic app" to the cloud and specifically the Cloud Foundry environment. We look at deployment attributes, the manifest.yml attribute deployment file, differences between deploying different development languages (Node, Python, Java) and containers (Diego, Docker).  
 
-[![Business Logic App | cf push](https://img.youtube.com/vi/DGi3Kf9imyE/0.jpg)](https://youtu.be/DGi3Kf9imyE "Business Logic App | cf push")
-
-## Header ##
-
-To connect to the SAP Cloud Platform, set the API endpoint and login. 
+To connect to the SAP Cloud Platform, set the API endpoint and login. You can use the cf target command to view or set the Cloud Foundry Org ans Space.
 ```
 cf api https://api.cf.eu10.hana.ondemand.com
-cf l[ogin]
+cf l[ogin] --sso
+cf t[arget]
+```
+To publish the app use the push command. 
+```
 cf push myapp --random-route
 ```
 
+[![Business Logic App | cf push](https://img.youtube.com/vi/DGi3Kf9imyE/0.jpg)](https://youtu.be/DGi3Kf9imyE "Business Logic App | cf push")
 
+### Tutorial Video - Service Instace: SAP HANA Cloud and HDI Containers ### 
+In this fourth video of the series, we cover how we can bind our Business Logic App to a Service Instance. There are many services available on the SAP Cloud Platform, Cloud Foundry environment. For our app, we will be using the SAP HANA Cloud service (trial) and the SAP HANA Schemas and HDI Container service.  
+
+To view the available services use the cf marketplace command and use the -s <service name> for additional information like the available plans. 
+```
+cf m[arketplace]
+cf m -s hana-cloud-trial
+cf m -s hana
+```
+[![Service Instances | cf push](https://img.youtube.com/vi/kSCdTjMkwlU/0.jpg)](https://youtu.be/kSCdTjMkwlU "Service Instances | SAP HANA Cloud & HDI Containers")
 
 
 
