@@ -48,6 +48,16 @@ cf m -s hana
 ### Tutorial Video - Approuter and XSUAA Service ### 
 In this fifth video of the series, we show how we can create and configure an instance of the XSUAA service and how to add an approuter to our app to serve as endpoint.   
 
+```
+# query the marketplace for the xsuaa service
+cf m -s xsuaa
+# create an instance using security descriptor file (choose one)
+cf create-service xsuaa application myxsuaa -c xs-security.json
+cf create-service xsuaa application myxsuaa -c '{"xsappname":"myapp", "tenant-mode":"dedicated"}'
+# query service configuration
+cf service myxsuaa
+```
+
 [![Approuter and XSUAA Service](https://img.youtube.com/vi/mMwwJsHtdko/0.jpg)](https://youtu.be/mMwwJsHtdko "Approuter and XSUAA Service")
 
 
