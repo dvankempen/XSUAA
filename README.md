@@ -44,6 +44,11 @@ cf m -s hana-cloud-trial
 cf m -s hana
 ```
 [![Service Instances | cf push](https://img.youtube.com/vi/kSCdTjMkwlU/0.jpg)](https://youtu.be/kSCdTjMkwlU "Service Instances | SAP HANA Cloud & HDI Containers")
+  
+### Tutorial Video - Approuter and XSUAA Service ### 
+In this fifth video of the series, we show how we can create and configure an instance of the XSUAA service and how to add an approuter to our app to serve as endpoint.   
+
+[![Approuter and XSUAA Service](https://img.youtube.com/vi/mMwwJsHtdko/0.jpg)](https://youtu.be/mMwwJsHtdko "Approuter and XSUAA Service")
 
 
 
