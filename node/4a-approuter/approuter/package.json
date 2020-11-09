@@ -6,12 +6,12 @@
   "author": "SAP",
   "license": "ISC",
   "dependencies": {
-    "@sap/approuter": "^8.5.4"
+    "@sap/approuter": "^8.5.5"
   },
   "engines": {
     "node": "10.x.x"
   },
   "scripts": {
-      "start": "node node_modules/@sap/approuter/approuter.js"
+    "start": "node node_modules/@sap/approuter/approuter.js"
   }
 }
