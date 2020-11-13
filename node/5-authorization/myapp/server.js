@@ -12,8 +12,8 @@ app.use(passport.initialize());
 app.use(passport.authenticate('JWT', { session: false }));
 
 // Users file
-const bodyParser = require('body-parser');
 const users = require('./users.json');
+const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/users', function (req, res) {
