@@ -61,6 +61,15 @@ cf service myxsuaa
 [![Approuter and XSUAA Service](https://img.youtube.com/vi/mMwwJsHtdko/0.jpg)](https://youtu.be/mMwwJsHtdko "Approuter and XSUAA Service")
 
 
+### Tutorial Video - XSUAA and Authentication ### 
+In this sixth video of the series, we explore authentication using XSUAA service with some code changes to the business logic of our services app.
+
+[![XSUAA and Authentication](https://img.youtube.com/vi/60HCsvszt2M/0.jpg)](https://youtu.be/60HCsvszt2M "XSUAA and Authentication")
+
+### Tutorial Video - XSUAA and Authorization ### 
+n this seventh video of the series, we explore authorizarion using XSUAA service with some code changes to the business logic of our services app and to the front-end, the app router. 
+
+[![XSUAA and Authorization](https://img.youtube.com/vi/hfKkclnhVHQ/0.jpg)](https://youtu.be/hfKkclnhVHQ "XSUAA and Authorization")
 
 
 
